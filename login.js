@@ -1,5 +1,5 @@
 const dataLocal = localStorage.USERS ?JSON.parse(localStorage.USERS) : [];
-console.log(dataLocal)
+
 
 if(localStorage.SESSIONUSER){
     window.location.href = "./profile.html";
@@ -27,7 +27,7 @@ document.querySelector("form").addEventListener("submit", event=>{
         message.classList.add("success")
         message.textContent = "Connexion effectuée !"
         setTimeout(() => {
-            window.location.href = "./profile";
+            window.location.href = "./profile.html";
         }, 2000);
     }else{
         message.classList.add("error")
