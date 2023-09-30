@@ -27,7 +27,7 @@ document.querySelector("form").addEventListener("submit", event=>{
         message.classList.add("success")
         message.textContent = "Connexion effectuée !"
         setTimeout(() => {
-            window.location.href = "./profile.html";
+            window.location.href = "./donnees.html";
         }, 2000);
     }else{
         message.classList.add("error")
