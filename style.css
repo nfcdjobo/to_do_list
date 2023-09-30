@@ -3,7 +3,7 @@ body {
     padding: 0px;
   }
   
-  input[type=text], input[type=password] , input[type=email], input[type=number]  {
+  input[type=text], input[type=password] , input[type=email], input[type=number], input[type=button]:focus  {
     outline: none;
     width: 100%;
     padding: 12px;
@@ -16,7 +16,7 @@ body {
     margin-left: 0px;
     resize: vertical;
   }
-  input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=number]:focus{
+  input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=number]:focus, input[type=button]:focus{
     border: 1px solid orange;
   }
   label{margin-right: 0px;
@@ -25,6 +25,19 @@ body {
   
   input[type=submit] {
     background-color: #1255a2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #25a212;
+  }
+
+  input[type=button] {
+    background-color: #25a212;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -136,3 +149,5 @@ tbody tr:nth-child(even) {
     content: attr(data-title);
   }
 }
+
+.aaaaa{margin: 0 1rem;}

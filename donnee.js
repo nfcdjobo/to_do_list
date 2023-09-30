@@ -6,6 +6,7 @@ const session = JSON.parse(localStorage.SESSIONUSER) ;
 const all = localStorage.ALL ? JSON.parse(localStorage.ALL) : [];
 const tbody = document.querySelector("tbody");
 if(all.length && all.find(user=>user.email === session.userId)){
+    alert()
     all.filter(user=>user.email === session.userId).forEach((uses, indece) => {
         tbody.innerHTML += `
         <tr id="${indece+1}">

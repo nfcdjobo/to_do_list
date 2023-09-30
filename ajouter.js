@@ -11,7 +11,7 @@ formulaire.addEventListener("submit", event=>{
     const data = {
         nom:event.target.nom.value,
         prenom:event.target.prenom.value,
-        email:event.target.email.email,
+        email:event.target.email.value,
         poste:event.target.poste.value,
         salaire:Number(event.target.salaire.value),
         userId:session.email
