@@ -17,7 +17,7 @@ if(all.length && all.find(user=>user.userId === session.email)){
           <td data-title="DUREE TACHE 1">${uses.prenom}</td>
           <td data-title="TACHE 2">${uses.email}</td>
           <td data-title="DUREE TACHE 2">${uses.poste}</td>
-          <td data-title="MONTANT DES DEUX TACHES">${uses.salaire}</td>
+          <td data-title="MONTANT DES DEUX TACHES">${uses.salaire} FCFA</td>
           <td data-title="ACTION"><i class="edite" id="edite-${indece+1}">Edite</i> <i class="delete" id="delete-${indece+1}">Delete</i></td>
         </tr>
         `
