@@ -6,17 +6,16 @@ const session = JSON.parse(localStorage.SESSIONUSER) ;
 const all = localStorage.ALL ? JSON.parse(localStorage.ALL) : [];
 const tbody = document.querySelector("tbody");
 if(all.length && all.find(user=>user.email === session.userId)){
-    alert()
     all.filter(user=>user.email === session.userId).forEach((uses, indece) => {
         tbody.innerHTML += `
         <tr id="${indece+1}">
           <td data-title="N°">${indece+1}</td>
-          <td data-title="NOM">${uses.nom}</td>
-          <td data-title="PRENOM">${uses.prenom}</td>
-          <td data-title="EMAIL">${uses.email}</td>
-          <td data-title="POSTE">${uses.poste}</td>
-          <td data-title="SALAIRE">${uses.salaire}</td>
-          <td data-title="MODIFICATION"><i class="edite-${indece+1}">Edite</i> <i class="delete-${indece+1}">Delete</i></td>
+          <td data-title="TACHE 1">${uses.nom}</td>
+          <td data-title="DUREE TACHE 1">${uses.prenom}</td>
+          <td data-title="TACHE 2">${uses.email}</td>
+          <td data-title="DUREE TACHE 2">${uses.poste}</td>
+          <td data-title="MONTANT DES DEUX TACHES">${uses.salaire}</td>
+          <td data-title="ACTION"><i class="edite" id="edite-${indece+1}">Edite</i> <i class="delete" id="delete-${indece+1}">Delete</i></td>
         </tr>
         `
     });
