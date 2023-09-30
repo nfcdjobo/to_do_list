@@ -6,10 +6,11 @@ const session = JSON.parse(localStorage.SESSIONUSER) ;
 const all = localStorage.ALL ? JSON.parse(localStorage.ALL) : [];
 
 const tbody = document.querySelector("tbody");
-console.log(all,  session)
-if(all.length && all.find(user=>user.email === session.userId)){
-
-    all.filter(user=>user.email === session.userId).forEach((uses, indece) => {
+console.log(all.find(user=>user.userId === session.email))
+if(all.length && all.find(user=>user.userId === session.email)){
+    alert()
+    all.filter(user=>user.userId === session.email).forEach((uses, indece) => {
+       
         tbody.innerHTML += `
         <tr id="${indece+1}">
           <td data-title="N°">${indece+1}</td>
